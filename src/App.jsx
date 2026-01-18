@@ -15,7 +15,7 @@ import VideoSettings from './pages/VideoSettings';
 import EmailManagement from './pages/EmailManagement';
 import ContactResponses from './pages/ContactResponses';
 
-export const backendUrl = import.meta.env.VITE_BACKEND_URL
+export const backendUrl = (import.meta.env.VITE_BACKEND_URL || 'https://ordan-backend.onrender.com').replace(/\/$/, '')
 export const currency = '₹'
 
 const App = () => {
