@@ -13,6 +13,7 @@ import HeroList from './pages/HeroList';
 import Settings from './pages/Settings';
 import VideoSettings from './pages/VideoSettings';
 import EmailManagement from './pages/EmailManagement';
+import ContactResponses from './pages/ContactResponses';
 
 export const backendUrl = import.meta.env.VITE_BACKEND_URL
 export const currency = '₹'
@@ -45,6 +46,7 @@ const App = () => {
                 <Route path='/settings' element={<Settings token={token} />} />
                 <Route path='/video-settings' element={<VideoSettings token={token} />} />
                 <Route path='/email-management' element={<EmailManagement token={token} />} />
+                <Route path='/contact-responses' element={<ContactResponses token={token} />} />
               </Routes>
             </div>
           </div>
